@@ -16,14 +16,13 @@ points:
         pinky-add:
           rows:
             bottom.skip: true
-            home.skip: true
         pinky:
           key.spread: 1cx
-          key.stagger: 8
+          key.stagger: 6
         ring:
           key.splay: -14
           key.origin: [-8, -4]
-          key.stagger: 12
+          key.stagger: 14
         middle:
           key.origin: [10, -6]
           key.splay: -10
@@ -35,7 +34,7 @@ points:
           key.stagger: -8
           key.spread: 1cx
         inner:
-          key.stagger: -4
+          key.stagger: -6
           key.spread: 1cx
       rows:
         bottom:
@@ -47,14 +46,15 @@ points:
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-20, -24]
+        shift: [-20, -23]
       columns:
         near:
-          key.splay: -10
+          key.origin: [8, 2]
+          key.splay: -4
         home:
           key.spread: 20
-          key.splay: -20
-          key.origin: [-10, -2]
+          key.splay: -26
+          key.origin: [-10, -4]
         far:
           key.spread: 20
           key.splay: -20
