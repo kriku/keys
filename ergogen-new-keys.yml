@@ -1,0 +1,65 @@
+units:
+  choc_cap_x: 16.5
+  choc_cap_y: 16.5
+  cx: 17.5
+  cy: 17
+
+points:
+  key:
+    width: choc_cap_x
+    height: choc_cap_y
+  zones:
+    matrix:
+      anchor:
+        rotate: 0
+      columns:
+        pinky-add:
+          rows:
+            bottom.skip: true
+            home.skip: true
+        pinky:
+          key.spread: 1cx
+          key.stagger: 8
+        ring:
+          key.splay: -14
+          key.origin: [-8, -4]
+          key.stagger: 12
+        middle:
+          key.origin: [10, -6]
+          key.splay: -10
+          key.stagger: 2
+          key.spread: 18
+        index:
+          # key.origin: [0, -10]
+          # key.splay: -4
+          key.stagger: -8
+          key.spread: 1cx
+        inner:
+          key.stagger: -4
+          key.spread: 1cx
+      rows:
+        bottom:
+          padding: 1cy
+        home:
+          padding: 1cy
+        top:
+          padding: 1cy
+    thumbfan:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-20, -24]
+      columns:
+        near:
+          key.splay: -10
+        home:
+          key.spread: 20
+          key.splay: -20
+          key.origin: [-10, -2]
+        far:
+          key.spread: 20
+          key.splay: -20
+          key.origin: [-10, -2]
+      rows:
+        thumb:
+          rotate: 0
+  rotate: 24
